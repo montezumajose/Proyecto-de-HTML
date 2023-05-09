@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<h1>Programa, calcular IMC</h1>
+<script>
+
+    function saltarLinea() {
+    document.write("<br>");    
+    document.write("<br>");    
+    document.write("<br>"); 
+    document.write("<hr>");
+    document.write("<br>");  
+    document.write("<br>");    
+}  
+    function imprimir(frase) {
+        document.write("<big>" + frase +"</big>");
+        saltarLinea();
+    }
+
+    function calcularIMC(peso, altura, nombre) {
+        
+        imc = peso / (altura * altura);
+        imprimir("El IMC de " + nombre + " es de " + imc);
+
+    }
+
+    calcularIMC(77,1.76,"José");
+
+</script>
